@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scalet=1.0">
+  <title>Mở Rương An Café Quy Chế</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Mở Ruong An Café Quy Chế</h1>
+  <input type="text" id="codeInput" placeholder="Nhập mã ancafexinchao">
+  <button onclick="openChest()">Mở rương</button>
+  <p id="message"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
+body {
+  font-family: Arial, sans -serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+}
+
+button{
+  padding: 10px 20px;
+background-color: #28a745;
+color: while;
+border: none;
+cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+function openChest() {
+    const codeInput = document.getElementById('codeInput').value;
+    const message = document.getRlementById('message');
+
+   if (codeInput === 'QCKHAKMF') {
+    message.innerHTML = 'Chúc mừng! bạn đã mở rương thành công!';
+  } else { 
+    message.innerHTML = 'Yes sir, mã không chuẩn rồi. Vui lòng thử lại nha.';
+  }
+}
+git init
+git add
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin http://github.com/an.kiwiche/an-cafe-quy-che.git
+git push -u origin main
